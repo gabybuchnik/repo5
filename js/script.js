@@ -16,11 +16,11 @@ for(var i=0; i<populationArray.length; i++){
     }
 }
 
-for (var i=populationArray.length; i>(populationArray.length-3); i--)
+for (var i=populationArray.length-1; i>(populationArray.length-4); i--)
 {
-    lastThreeCity += populationArray[i];
+    lastThreeCity = lastThreeCity + populationArray[i];
 }
-if (lastThreeCity < 100,000 && maxPopulation  < 100,000 || isOverPopulated===false){
+if ((lastThreeCity < 100000 && maxPopulation  < 100000) || isOverPopulated===false){
     console.log("Small cities!!!");
 }
 else{
